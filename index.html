@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GIRIPRASANTH</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      scroll-margin-top: 80px; /* adjust if needed */
+    }
+    /* Your pasted styles go here */
+    .Experience-bottom,
+    .Projects-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .Experience-item {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .Experience-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .Experience-item .icon {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .Experience-item .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .Experience-item .text-box h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .Experience-item .text-box p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .Experience-bottom,
+      .Projects-bottom {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- ───── HERO / TOP BAR ───── -->
+  <section id="one">
+    <!-- NAVIGATION BAR -->
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white p-4 flex items-center justify-between">
+  <div class="text-2xl font-bold">MY PROFILE</div>
+
+  <!-- Hamburger Button (Mobile) -->
+  <button id="menu-toggle" class="md:hidden">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <!-- Menu Items -->
+  <div id="menu" class="hidden md:flex space-x-6 text-lg">
+    <li><a href="#About" class="hover:text-gray-300">About</a></li>
+    <li><a href="#Experience" class="hover:text-gray-300">Experience</a></li>
+    <li><a href="#Projects" class="hover:text-gray-300">Projects</a></li>
+    <li><a href="#Contact" class="hover:text-gray-300">Contact</a></li>
+  </div>
+</nav>
+
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden flex flex-col bg-black text-white p-4 gap-4 text-lg">
+  <li><a href="#About" class="hover:underline">About</a></li>
+  <li><a href="#Experience" class="hover:underline">Experience</a></li>
+  <li><a href="#Projects" class="hover:underline">Projects</a></li>
+  <li><a href="#Contact" class="hover:underline">Contact</a></li>
+</div>
+
+<!-- hero text -->
+    <div class="container">
+      <div>
+        <h1 style="font-size:3rem;">Hello, This is</h1>
+        <h1 style="font-size:2.2rem;font-weight:700;">GIRIPRASANTH S</h1>
+        <h1>AI In Machine Learning</h1>
+        <a href="#Contact" class="cta">Hire Me</a>
+        <a href="Giriprasanth-Resume.pdf" class="cta" download style="margin-left:20px;">Download CV</a>
+      </div>
+    </div>
+  </section>
+<main class="pt-24">
+  <!-- Experience Section -->
+  <section id="Experience">
+    <div class="Experience container">
+      
+      <div class="experience-top">
+        <h1 class="Experience-title"><span>Experience</span></h1>
+        <p>Hands-on experience with Python, Pandas, NumPy, and Scikit-learn. Performed data cleaning, visualization, and built ML models for real-world problems. Analyzed datasets using SQL and created insightful reports using Matplotlib and Seaborn.</p>
+      </div>
+
+      <div class="Experience-bottom">
+        <div class="Experience-item">
+          <div class="icon"><img src="ai.jpg" alt="Machine Learning" /></div>
+          <div class="text-box">
+            <h2>Machine Learning</h2>
+            <p>Built ML models using Scikit-learn for classification, regression, and clustering tasks. Worked on real-world datasets involving data preprocessing, model training, and evaluation. Familiar with algorithms like Linear Regression, Decision Trees, and KNN.</p>
+          </div>
+        </div>
+
+        <div class="Experience-item">
+          <div class="icon"><img src="download.jpeg" alt="Data Science" /></div>
+          <div class="text-box">
+            <h2>Data Science</h2>
+            <p>Gained hands-on experience in data cleaning, analysis, and visualization using Python libraries like Pandas, NumPy, Matplotlib, and Seaborn. Built and evaluated ML models for classification and prediction.</p>
+          </div>
+        </div>
+
+        <div class="Experience-item">
+          <div class="icon"><img src="data analysis.jpg" alt="Data Analysis" /></div>
+          <div class="text-box">
+            <h2>Data Analysis</h2>
+            <p>Experienced in analyzing and interpreting complex datasets using Python and Excel. Performed data cleaning, preprocessing, and visualization to uncover insights and trends using Pandas, NumPy, and Matplotlib.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects">
+    <div class="Projects-header">
+      <h1 class="Experience-title"><span>PROJECTS</span></h1>
+    </div>
+
+    <div class="Projects-bottom">
+      <div class="Experience-item">
+        <div class="icon"><img src="crop.jpeg" alt="Crop Detection" /></div>
+        <div class="text-box">
+          <h2>Crop & Weed Detection</h2>
+          <p>Developed a Crop and Weed Detection system using YOLOv10b (89.5%) and CNN (97.11%). Compared effectiveness of both models with advanced image processing and deep learning.</p>
+        </div>
+      </div>
+
+      <div class="Experience-item">
+        <div class="icon"><img src="download 4.jpg" alt="Smart Restaurant" /></div>
+        <div class="text-box">
+          <h2>Smart Restaurant ML</h2>
+          <p>Designed ML models for restaurant rating prediction, cuisine classification & personalized recommendations using Python, Pandas, and Scikit-learn on real-world data.</p>
+        </div>
+      </div>
+
+      <div class="Experience-item">
+        <div class="icon"><img src="download 3.jpg" alt="Restaurant Data" /></div>
+        <div class="text-box">
+          <h2>Restaurant Data Analysis</h2>
+          <p>Cleaned, analyzed and modeled restaurant data. Built regression models to predict ratings and extracted trends in cuisine & delivery to provide business insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About">
+    <div class="About container">
+      <div class="col-left">
+        <div class="About-img">
+          <img src="vgiri.jpg" alt="giri" />
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title"><span>About me</span></h1>
+        <h2>AI In Machine Learning</h2>
+        <p>Passionate and detail-oriented AI Developer and Data Science enthusiast, currently pursuing a Bachelor of Engineering in Computer Science and Engineering. I have explored the intersection of code, data, and intelligence through hands-on experience in machine learning, image processing, and data analytics. Proficient in Python, Java, and C, with a strong foundation in algorithm development and software engineering principles. I bring practical experience from internships and self-driven projects, along with excellent problem-solving skills and a strong ability to work effectively in team environments</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact" class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Left Column: Info -->
+    <div class="contact-info">
+      <h1><span>Contact me</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna porttitor rhoncus dolor.</p>
+
+      <div class="contact-icon-box">
+        <img src="gmail.png" alt="Email Icon" />
+        <p><a href="mailto:giriprasanth0806@gmail.com" style="text-decoration: none; color: inherit;">giriprasamth0806@gmail.com</a></p>
+      </div>
+
+      <div class="contact-icon-box">
+        <img src="phone.png" alt="Phone Icon" />
+        <p><a href="tel:+918531955621" style="text-decoration: none; color: inherit;">+91 8531955621</a></p>
+      </div>
+    </div>
+
+    <!-- Right Column: Form -->
+    <form class="contact-form" action="https://formspree.io/f/xnnvyryp" method="POST">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Your Email" name="email" required />
+      </div>
+
+      <div class="form-row">
+        <input type="tel" placeholder="Your Phone Number" name="phone" required />
+        <select name="subject" required>
+          <option value="">Select Subject</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support</option>
+        </select>
+      </div>
+
+      <textarea name="message" placeholder="Please write your message..." required></textarea>
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+</main>
+  <p class="form-success" style="display:none; color: green;">Thank you! Message sent successfully.</p>
+</section>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <!-- Left: Brand & Description -->
+      <div class="footer-left">
+        <h2 class="footer-logo">GIRIPRASANTH</h2>
+        <p>Empowering through intelligent data-driven solutions in AI and Machine Learning.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+          <a href="https://github.com/Giriprasanth08" target="_blank"><img src="github-logo.png" alt="GitHub"></a>
+        </div>
+      </div>
+
+      <!-- Center: Site Map -->
+      <div class="footer-center">
+        <h3>Site Map</h3>
+        <ul>
+          <li><a href="#one">Homepage</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Legal -->
+      <div class="footer-right">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 GIRIPRASANTH. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
